@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificar Nacionalidade</h1>
+    Digite seu pais <input type="text" id="txtpais">
+    <input type="button" value="Checar" onclick="checar()">
+    <div id="res"></div>
+    <script>
+        function checar(){
+            var pais = document.getElementById('txtpais')
+            var res = window.document.getElementById('res')
+            if (pais.value =='Brasil'){ //Não esquecer de colocar .value quando busca do txt
+                res.innerHTML = `Seu pais é ${pais.value} e você Brasileiro`
+                
+            }else{
+                res.innerHTML = `Seu pais é ${pais.value} e você é estrangeiro`
+            }
+
+        }
+    </script>
+</body>
+</html>

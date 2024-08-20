@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Calculadora</h1>
+
+  </header>
+  <section>
+    <div id="hora"></div>
+    <div id="resultado">0
+      
+    </div><br><br>
+    <div id="teclado">
+        <input type="button" class="botao" onclick="mostrar('+')" value="+" id="btnSoma">
+        <input type="button" class="botao" onclick="mostrar('-')" value="-" id="btnSub">
+        <input type="button" class="botao" onclick="mostrar('x')" value="x" id="btnMult"> 
+        <input type="button" class="botao" onclick="mostrar('/')" value="\" id="btnDiv">
+        <input type="button" class="botao" onclick="mostrar(7)" value="7" id="btn7">
+        <input type="button" class="botao" onclick="mostrar(8)" value="8" id="btn8">
+        <input type="button" class="botao" onclick="mostrar(9)" value="9" id="btn9">
+        <input type="button" class="botao" onclick="mostrar(4)" value="4" id="btn4">
+        <input type="button" class="botao" onclick="mostrar(5)" value="5" id="btn5">
+        <input type="button" class="botao" onclick="mostrar(6)" value="6" id="btn6">
+        <input type="button" class="botao" onclick="mostrar(1)" value="1" id="btn1">
+        <input type="button" class="botao" onclick="mostrar(2)" value="2" id="btn2">
+        <input type="button" class="botao" onclick="mostrar(3)" value="3" id="btn3">
+        <input type="button" class="botao" onclick="mostrar(0)" value="0" id="btn0">
+        <input type="button" class="botao" onclick="mostrar('.')" value="." id="btnPonto">
+        <input type="button" class="botao" onclick="mostrar('c')" value="C" id="btnc">
+        <input type="button" class="botao" onclick="mostrar('=')" value="=" id="btnIgual">
+    </div>
+
+  </section>
+  <footer>
+    <p>&copy; Leonardo</p>
+  </footer>
+  <script src="script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,110 @@
+body{
+    background: rgb(82, 125, 243);
+    font: normal 15pt Arial;
+
+}
+
+header{
+    color: white;
+    text-align: center;
+
+}
+
+section{
+    background: white;
+    border-radius: 25px ;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    border: 5px solid rgb(65, 63, 63) ;
+
+}
+#hora{
+    font: 15pt solid Arial ;
+    position: absolute;
+    top: 140px;
+    left: 170px;
+    z-index: 1;
+    
+}
+#resultado{
+    position: relative;
+    width: 77%;
+    height: 70px;
+    background: rgb(177, 174, 174);
+    font-size: 34pt;
+    border-radius: 20px;
+    text-align: right;
+    padding-right: 8px;
+    margin-left: 10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    padding-bottom: 10px;
+    border: 20px double rgb(160, 156, 156) ;
+
+}
+#teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 1.5fr;
+    grid-template-rows: repeat(5, 1fr);
+
+    grid-template-areas:
+    "btnSoma btnSub btnMult btnDiv"
+    "btn7 btn8 btn9 btnIgual"
+    "btn4 btn5 btn6 btnIgual"
+    "btn1 btn2 btn3 btnIgual"
+    "btn0 btnPonto btnC btnIgual";
+    grid-gap: 10px;
+    max-width: 400px;
+    margin: auto auto;
+    width: 100%;
+}
+.botao{
+
+    font: normal 24pt Arial;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 20px;
+
+} 
+.botao:hover{
+    background-color: #868080;
+}
+#btnc { grid-area: btnC; } /* comando usado para atribuir a area para o templates area criando uma variavel*/
+#btnDiv { grid-area: btnDiv; }
+#btnMult { grid-area: btnMult; }
+#btnSub { grid-area: btnSub; }
+#btn7 { grid-area: btn7; }
+#btn8 { grid-area: btn8; }
+#btn9 { grid-area: btn9; }
+#btn4 { grid-area: btn4; }
+#btn5 { grid-area: btn5; }
+#btn6 { grid-area: btn6; }
+#btn1 { grid-area: btn1; }
+#btn2 { grid-area: btn2; }
+#btn3 { grid-area: btn3; }
+#btn0 { grid-area: btn0; }
+#btnPonto { grid-area: btnPonto; }
+#btnSoma { grid-area: btnSoma; }
+#btnIgual{
+    grid-area: btnIgual;
+    background: orange;
+    font: normal 24pt Arial;
+    height: 100%;
+
+
+    
+}
+
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
